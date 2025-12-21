@@ -4,7 +4,10 @@
 name = "muhammad"
 age = 21
 location = "msa"
-goal = "Full Stack Developer"
+import math_tools
+
+print(math_tools.add(10, 5))
+print(math_tools.subtract(10, 5))goal = "Full Stack Developer"
 
 print("Name:", name)
 print("Age:", age)
@@ -25,4 +28,17 @@ a = 50
 b = 10
 print(a//b)
 print(a%b)
-print(50**10)
+print(49**10)
+import math_tools
+
+print(math_tools.add(10, 5))
+print(math_tools.subtract(10, 5))
+import math_tools
+
+print(math_tools.add(10, 5))
+print(math_tools.subtract(10, 5))
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b

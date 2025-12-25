@@ -61,7 +61,6 @@ def module_math_operations() -> None:
     print("Subtract (module) :", subtract(10, 5))
     print()
 
-
 # =============================
 # MAIN PROGRAM
 # =============================
@@ -70,6 +69,31 @@ def main() -> None:
     basic_math_operations()
     module_math_operations()
 
+
+if __name__ == "__main__":
+    main()
+
+
+# =============================
+# CONDITIONALS PRACTICE 
+# =============================
+def check_developer_level(years_of_experience):
+         print("DEVELOPER LEVEL")
+         
+         if years_of_experience < 1:
+              print("Beginner")
+         elif years_of_experience < 3:
+             print("junior")
+         elif years_of_experience < 5:
+             print("Mid Level")
+         else:
+                print("Senior")
+
+# =============================
+# MAIN PROGRAM
+# =============================
+def main():
+    check_developer_level(0)
 
 if __name__ == "__main__":
     main()

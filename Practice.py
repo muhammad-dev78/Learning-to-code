@@ -97,3 +97,29 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+#  =============================
+#  LOGICAL OPERATORS PRACTICE
+#  =============================
+def check_access(age, has_id):
+    """Practice logical operators: and, or, not"""
+    print("ACCESS CHECK")
+    if age >= 18 and has_id:
+      print("Access Granted")
+    elif age >= 18 and not has_id:
+        print("ID Required")
+    elif age < 18 or not has_id:
+        print("Access Denied")
+
+#  =============================
+#  MAIN PROGRAM
+#  =============================
+def main():
+    check_access(21, True)
+    check_access(20, False)
+    check_access(30, True)
+
+if __name__ == "__main__":
+    main()
+           

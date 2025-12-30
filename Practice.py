@@ -2,7 +2,7 @@
 File: practice.py
 Author: Muhammad Hussein
 Purpose: Full Stack Development Practice (Beginner → Pro)
-Last Updated: 23 December 2025
+Created: 23 December 2025
 """
 
 # =============================
@@ -122,4 +122,32 @@ def main():
 
 if __name__ == "__main__":
     main()
-           
+
+
+#  =============================
+#  ACCESS CHECK WITH INPUT
+#  =============================
+def    check_access(age, has_id):
+    print("\nACCESS CHECK")
+    
+    if age >= 18 and has_id:
+        print("Access Granted")
+    elif age >= 18 and not has_id:
+       print("ID Required")
+    else:
+       print("Access Denied")
+
+#  - - - User input - - -
+# =============================
+# MAIN PROGRAM
+# =============================
+
+def main():
+    age = int(input( "Enter your age: "))
+    id_input = input( "Do you have an ID? (yes/no): ")
+
+has_id = id_input.lower() == "yes"
+check_access(age, has_id)
+
+if __name__ == "__main__":
+    main()

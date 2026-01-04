@@ -151,3 +151,23 @@ check_access(age, has_id)
 
 if __name__ == "__main__":
     main()
+
+#  =============================
+#  FOR LOOP PRACTICE
+#  =============================
+
+def count_numbers( ):
+    " " "print numbers from 1 to 5" " "
+    print("counting from 1 to 5")
+    
+    for number in range(1, 6):
+        print( number )
+        
+# ===========================
+# MAIN PROGRAM
+# ===========================
+def main( ):
+    count_numbers( )
+    
+if __name__ == "__main__":
+    main( )

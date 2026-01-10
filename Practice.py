@@ -171,3 +171,104 @@ def main( ):
     
 if __name__ == "__main__":
     main( )
+
+# =============================
+# WHILE LOOP PRACTICE
+# =============================
+# - - - - - - - - - - -
+# 1. BASIC COUNTING
+# - - - - - - - - - - -
+
+
+def count_1_to_5():
+    print("\n1) count from 1 to 5")
+    count = 1
+    while count <= 5:
+         print(count)
+         count += 1
+         
+
+# - - - - - - - - - - - - - -
+# 2. COUNT WITH USER INPUT
+# - - - - - - - - - - - - - -
+def count_with_limit():
+    print("\n2) count with user limits")
+    limit = int(input("Enter a limit: "))
+    number = 1
+    
+    while number <= limit:
+        print(number)
+        number += 1
+        
+
+# - - - - - - - - - - -
+# 4. PASSWORD CHECK
+# - - - - - - - - - - -
+def password_check():
+    print("\n4) password check")
+    password = " "
+    
+    while password != "1234":
+         password = input("Enter password:")
+         
+    print("Access Granted")
+         
+         
+# - - - - - - - - - 
+# 5. WHILE + IF
+# - - - - - - - - -
+def even_numbers():
+    print("\n5) Even numbers from 1 to 10")
+    number = 1
+    
+    while number <= 10:
+        if number % 2 == 0:
+            print(number)
+        number += 1
+        
+       
+# - - - - - - - - - - -
+# 6. BREAK EXAMPLE
+# - - - - - - - - - - -
+def break_example():
+    print("\n6) Break example")
+    number = 1
+    
+    while True:
+         print(number)
+         if number == 5:
+             break
+         number += 1
+         
+         
+# - - - - - - - - - - - -
+# 7. CONTINUE EXAMPLE
+# - - - - - - - - - - - - 
+def continue_example():
+    print("\n7) Continue example")
+    number = 0
+    
+    while number < 5:
+             number += 1
+             if number == 3:
+                 continue
+             print(number)
+             
+             
+# - - - - - - - -
+# MAIN FUNCTION
+# - - - - - - - -
+def main():
+        count_1_to_5()
+        count_with_limit()
+        password_check()
+        even_numbers()
+        break_example()
+        continue_example()
+        
+        
+# - - - - - - - - - - - -
+# PROGRAM ENTRY POINT
+# - - - - - - - - - - - -
+if __name__  ==  "__main__":
+        main( )
